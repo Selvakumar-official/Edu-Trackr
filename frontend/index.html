@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduBus Tracker</title>
+</head>
+<body>
+
+<h1>EduBus Tracker</h1>
+
+<button onclick="goToLogin('SCHOOL')">School Login</button>
+<button onclick="goToLogin('COLLEGE')">College Login</button>
+
+<script>
+function goToLogin(type) {
+    localStorage.setItem("type", type);
+    alert(type + " selected");
+}
+</script>
+
+</body>
+</html>
